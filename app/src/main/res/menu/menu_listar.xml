@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homepage"
+        android:icon="@drawable/ic_action_home"
+        android:onClick="homepage"
+        android:title="homepage"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/ic_action_adicao"
+        android:onClick="cadastrar"
+        android:title="@string/cadastrar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/expCSV"
+        android:icon="@drawable/ic_action_tipo_csv"
+        android:title="CSV"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_action_lupa"
+        android:title="@string/consultar"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homepage"
+        android:icon="@drawable/ic_action_home"
+        android:onClick="homepage"
+        android:title="homepage"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_action_voltar"
+        android:onClick="voltar"
+        android:title="Voltar"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_action_salvar"
+        android:onClick="salvar"
+        android:title="Salvar"
+        app:showAsAction="always" />
+
+</menu>

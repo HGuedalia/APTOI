@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:onClick="atender"
+        android:title="Registrar atendimento" />
+
+    <item
+        android:onClick="atualizar"
+        android:title="Atualizar registro" />
+
+    <item
+        android:onClick="excluir"
+        android:title="Excluir registro" />
+
+</menu>
