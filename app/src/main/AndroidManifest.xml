@@ -14,10 +14,10 @@
         android:label="APTOI"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MeusPacientes"
+        android:theme="@style/Theme.proteroc"
         tools:targetApi="31">
         <activity
-            android:name=".TelaOpcoesActivity"
+            android:name=".HomepageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +26,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetalhesPacienteActivity"
+            android:name=".DetalharFichaActivity"
             android:exported="false" />
         <activity
-            android:name=".ListarPacienteActivity"
+            android:name=".ListarFichasActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastroPacienteActivity"
+            android:name=".CadastrarPacienteActivity"
             android:exported="false" />
     </application>
 

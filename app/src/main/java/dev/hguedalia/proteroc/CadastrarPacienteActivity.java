@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CadastroPacienteActivity extends AppCompatActivity {
+public class CadastrarPacienteActivity extends AppCompatActivity {
 
     private EditText nome;
     private EditText dataAtendimento;
@@ -122,7 +122,7 @@ public class CadastroPacienteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_paciente);
+        setContentView(R.layout.activity_cadastrar_paciente);
         getSupportActionBar().setTitle(R.string.cadastro_paciente);
 
         nome = findViewById(R.id.editNome);
@@ -344,12 +344,12 @@ public class CadastroPacienteActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater i = getMenuInflater();
-        i.inflate(R.menu.menu_cadastro, menu);
+        i.inflate(R.menu.menu_cadastrar, menu);
         return true;
     }
 
     public void homepage(MenuItem item) {
-        Intent it = new Intent(this, TelaOpcoesActivity.class);
+        Intent it = new Intent(this, HomepageActivity.class);
         startActivity(it);
     }
 
@@ -467,7 +467,7 @@ public class CadastroPacienteActivity extends AppCompatActivity {
             paciente.setDdor(ddor.getText().toString());
             long id = dao.inserir(paciente);
             Toast.makeText(this, "FICHA SALVA COM SUCESSO", Toast.LENGTH_SHORT).show();
-            Intent it = new Intent(this, ListarPacienteActivity.class);
+            Intent it = new Intent(this, ListarFichasActivity.class);
             startActivity(it);
         } else {
             paciente.setNome(nome.getText().toString());
@@ -576,7 +576,7 @@ public class CadastroPacienteActivity extends AppCompatActivity {
             paciente.setDdor(ddor.getText().toString());
             dao.atualizar(paciente);
             Toast.makeText(this, "FICHA ATUALIZADA COM SUCESSO", Toast.LENGTH_SHORT).show();
-            Intent it = new Intent(this, ListarPacienteActivity.class);
+            Intent it = new Intent(this, ListarFichasActivity.class);
             startActivity(it);
         }
     }

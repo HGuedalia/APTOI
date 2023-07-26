@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">meusPacientes</string>
+    <string name="app_name">proteroc</string>
     <string name="dados">DADOS</string>
     <string name="nome">Nome</string>
     <string name="dataAtendimento">Data de atendimento</string>

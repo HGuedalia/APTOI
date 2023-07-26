@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.meuspacientes",
+  "applicationId": "dev.hguedalia.proteroc",
   "variantName": "release",
   "elements": [
     {

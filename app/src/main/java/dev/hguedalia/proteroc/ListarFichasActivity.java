@@ -26,7 +26,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListarPacienteActivity extends AppCompatActivity {
+public class ListarFichasActivity extends AppCompatActivity {
 
     private ListView listView;
     private PacienteDAO dao;
@@ -38,7 +38,7 @@ public class ListarPacienteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listar_paciente);
+        setContentView(R.layout.activity_listar_fichas);
         getSupportActionBar().setTitle(R.string.listar_paciente);
 
         listView = findViewById(R.id.lista_pacientes);
@@ -57,7 +57,7 @@ public class ListarPacienteActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Paciente pacienteSelecionado = pacientesFiltrados.get(position);
 
-                Intent intent = new Intent(ListarPacienteActivity.this, DetalhesPacienteActivity.class);
+                Intent intent = new Intent(ListarFichasActivity.this, DetalharFichaActivity.class);
                 intent.putExtra("id", pacienteSelecionado.getId());
 
                 startActivity(intent);
@@ -101,7 +101,7 @@ public class ListarPacienteActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater i = getMenuInflater();
-        i.inflate(R.menu.menu_contexto, menu);
+        i.inflate(R.menu.menu_opcoes, menu);
     }
 
     public void procuraPaciente(String leito) {
@@ -137,12 +137,12 @@ public class ListarPacienteActivity extends AppCompatActivity {
     }
 
     public void homepage(MenuItem item) {
-        Intent it = new Intent(this, TelaOpcoesActivity.class);
+        Intent it = new Intent(this, HomepageActivity.class);
         startActivity(it);
     }
 
     public void cadastrar(MenuItem item) {
-        Intent it = new Intent(this, CadastroPacienteActivity.class);
+        Intent it = new Intent(this, CadastrarPacienteActivity.class);
         startActivity(it);
     }
 
@@ -151,7 +151,7 @@ public class ListarPacienteActivity extends AppCompatActivity {
                 (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 
         final Paciente pacienteAtualizar = pacientesFiltrados.get(menuInfo.position);
-        Intent it = new Intent(this, CadastroPacienteActivity.class);
+        Intent it = new Intent(this, CadastrarPacienteActivity.class);
         it.putExtra("paciente", pacienteAtualizar);
         startActivity(it);
     }
@@ -161,7 +161,7 @@ public class ListarPacienteActivity extends AppCompatActivity {
                 (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 
         final Paciente pacienteAtender = pacienteFichaFiltrado.get(menuInfo.position);
-        Intent it = new Intent(this, CadastroPacienteActivity.class);
+        Intent it = new Intent(this, CadastrarPacienteActivity.class);
         it.putExtra("paciente", pacienteAtender);
         startActivity(it);
     }

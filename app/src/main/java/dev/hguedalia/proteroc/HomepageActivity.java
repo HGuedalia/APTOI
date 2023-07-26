@@ -19,7 +19,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TelaOpcoesActivity extends AppCompatActivity {
+public class HomepageActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE_PERMISSION_SETTINGS = 1;
     private static final int REQUEST_CODE_CSV_FILE = 2;
@@ -28,7 +28,7 @@ public class TelaOpcoesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_opcoes);
+        setContentView(R.layout.activity_homepage);
         getSupportActionBar().setTitle(R.string.tela_opcoes);
 
         dao = new PacienteDAO(this);
@@ -51,7 +51,7 @@ public class TelaOpcoesActivity extends AppCompatActivity {
         princEscrever.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TelaOpcoesActivity.this, CadastroPacienteActivity.class);
+                Intent intent = new Intent(HomepageActivity.this, CadastrarPacienteActivity.class);
                 startActivity(intent);
             }
         });
@@ -59,7 +59,7 @@ public class TelaOpcoesActivity extends AppCompatActivity {
         princConsultar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TelaOpcoesActivity.this, ListarPacienteActivity.class);
+                Intent intent = new Intent(HomepageActivity.this, ListarFichasActivity.class);
                 startActivity(intent);
             }
         });
@@ -247,8 +247,8 @@ public class TelaOpcoesActivity extends AppCompatActivity {
 
             Toast.makeText(this, "DADOS IMPORTADOS COM SUCESSO", Toast.LENGTH_SHORT).show();
 
-            // Redirecionar para a atividade 'ListarPacienteActivity'
-            Intent intent = new Intent(TelaOpcoesActivity.this, ListarPacienteActivity.class);
+            // Redirecionar para a atividade 'ListarFichasActivity'
+            Intent intent = new Intent(HomepageActivity.this, ListarFichasActivity.class);
             startActivity(intent);
 
         } catch (IOException e) {

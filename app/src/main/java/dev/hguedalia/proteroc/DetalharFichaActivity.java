@@ -25,7 +25,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DetalhesPacienteActivity extends AppCompatActivity {
+public class DetalharFichaActivity extends AppCompatActivity {
 
     private TextView txtNome;
     private TextView txtDataAtendimento;
@@ -136,7 +136,7 @@ public class DetalhesPacienteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalhes_paciente);
+        setContentView(R.layout.activity_detalhar_ficha);
         getSupportActionBar().setTitle(R.string.detalhes_paciente);
 
         txtNome = findViewById(R.id.txtNome);
@@ -362,17 +362,17 @@ public class DetalhesPacienteActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater i = getMenuInflater();
-        i.inflate(R.menu.menu_detalhes, menu);
+        i.inflate(R.menu.menu_detalhar, menu);
         return true;
     }
 
     public void homepage(MenuItem item) {
-        Intent it = new Intent(this, TelaOpcoesActivity.class);
+        Intent it = new Intent(this, HomepageActivity.class);
         startActivity(it);
     }
 
     public void voltar(MenuItem item) {
-        Intent it = new Intent(this, ListarPacienteActivity.class);
+        Intent it = new Intent(this, ListarFichasActivity.class);
         startActivity(it);
     }
 

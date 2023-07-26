@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MeusPacientes" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.proteroc" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="windowNoTitle">false</item>
         <item name="windowActionBar">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -8,5 +8,5 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Theme.MeusPacientes" parent="Base.Theme.MeusPacientes" />
+    <style name="Theme.proteroc" parent="Base.Theme.proteroc" />
 </resources>
