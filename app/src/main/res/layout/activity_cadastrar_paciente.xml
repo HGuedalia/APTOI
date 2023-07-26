@@ -37,7 +37,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints="yes"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="date"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal"
@@ -99,7 +99,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="date"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal"
@@ -124,7 +124,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal"
@@ -274,7 +274,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="date"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal"
@@ -311,7 +311,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -335,7 +335,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -359,7 +359,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -383,7 +383,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -407,7 +407,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -707,7 +707,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -731,7 +731,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -755,7 +755,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -779,7 +779,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -803,7 +803,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -827,7 +827,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -851,7 +851,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -887,7 +887,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -911,7 +911,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
@@ -935,7 +935,7 @@
             android:layout_marginEnd="8dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
