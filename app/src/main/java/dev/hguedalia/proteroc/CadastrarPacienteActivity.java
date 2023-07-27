@@ -2,11 +2,12 @@ package dev.hguedalia.proteroc;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ public class CadastrarPacienteActivity extends AppCompatActivity {
 
     private EditText nome;
     private EditText dataAtendimento;
+    private boolean isFormatting;
     private EditText dataNascimento;
     private EditText idade;
     private EditText leito;
@@ -128,7 +130,55 @@ public class CadastrarPacienteActivity extends AppCompatActivity {
 
         nome = findViewById(R.id.editNome);
         dataAtendimento = findViewById(R.id.editDataAtendimento);
+        dataAtendimento.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (isFormatting) {
+                    isFormatting = false;
+                    return;
+                }
+
+                String dataDigitada = s.toString().replaceAll("[^\\d]", "");
+                String dataFormatada = FormatarData.dataFormatada(dataDigitada);
+
+                isFormatting = true;
+                dataAtendimento.setText(dataFormatada);
+                dataAtendimento.setSelection(dataFormatada.length());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
         dataNascimento = findViewById(R.id.editDataNascimento);
+        dataNascimento.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (isFormatting) {
+                    isFormatting = false;
+                    return;
+                }
+
+                String dataDigitada = s.toString().replaceAll("[^\\d]", "");
+                String dataFormatada = FormatarData.dataFormatada(dataDigitada);
+
+                isFormatting = true;
+                dataNascimento.setText(dataFormatada);
+                dataNascimento.setSelection(dataFormatada.length());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
         idade = findViewById(R.id.editIdade);
         leito = findViewById(R.id.editLeito);
         prontuario = findViewById(R.id.editProntuario);
@@ -136,6 +186,30 @@ public class CadastrarPacienteActivity extends AppCompatActivity {
         histOcup = findViewById(R.id.editHistOcup);
         isolamento = findViewById(R.id.editIsolamento);
         dataAdmissao = findViewById(R.id.editDataAdmissao);
+        dataAdmissao.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (isFormatting) {
+                    isFormatting = false;
+                    return;
+                }
+
+                String dataDigitada = s.toString().replaceAll("[^\\d]", "");
+                String dataFormatada = FormatarData.dataFormatada(dataDigitada);
+
+                isFormatting = true;
+                dataAdmissao.setText(dataFormatada);
+                dataAdmissao.setSelection(dataFormatada.length());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
         fc = findViewById(R.id.editFc);
         fr = findViewById(R.id.editFr);
         spo2 = findViewById(R.id.editSpo2);
