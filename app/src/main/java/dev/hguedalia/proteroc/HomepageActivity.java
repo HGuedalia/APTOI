@@ -121,8 +121,8 @@ public class HomepageActivity extends AppCompatActivity {
                     isFirstLine = false;
                     continue; // Ignora a primeira linha e continua para a próxima linha
                 }
-                // Divide a linha em colunas usando o ponto-e-vírgula como separador
-                String[] columns = line.split(",", -1);
+                // Divide a linha em colunas usando o separador
+                String[] columns = splitCSVLine(line);
 
                 // Verifica se o número de colunas é válido
                 if (columns.length >= 104) {
@@ -255,5 +255,27 @@ public class HomepageActivity extends AppCompatActivity {
             Toast.makeText(this, "ERRO AO IMPORTAR DADOS", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
+    }
+
+    private String[] splitCSVLine(String line) {
+        List<String> columns = new ArrayList<>();
+        StringBuilder currentColumn = new StringBuilder();
+        boolean insideQuotes = false;
+
+        for (char c : line.toCharArray()) {
+            if (c == '"') {
+                insideQuotes = !insideQuotes;
+            } else if (c == ',' && !insideQuotes) {
+                columns.add(currentColumn.toString());
+                currentColumn.setLength(0); // Limpa o StringBuilder para a próxima coluna
+            } else {
+                currentColumn.append(c);
+            }
+        }
+
+        // Adiciona a última coluna
+        columns.add(currentColumn.toString());
+
+        return columns.toArray(new String[0]);
     }
 }
