@@ -1,40 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomepageActivity">
 
     <ImageView
-        android:id="@+id/princEscrever"
+        android:id="@+id/botaoImpCsv"
         android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="175dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/registrar_paciente" />
+        app:srcCompat="@drawable/importar_csv" />
 
     <ImageView
-        android:id="@+id/princConsultar"
+        android:id="@+id/botaoConsultar"
         android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/princImpCsv"
-        app:layout_constraintStart_toEndOf="@+id/princEscrever"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/procurar_paciente" />
 
     <ImageView
-        android:id="@+id/princImpCsv"
+        android:id="@+id/botaoEscrever"
         android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/importar_csv" />
+        app:srcCompat="@drawable/registrar_paciente" />
+
+    <TextView
+        android:id="@+id/titBotaoEscrever"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Novo prontuário"
+        android:textColor="#055E93"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/botaoEscrever"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/titBotaoConsultar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Listar atendimentos"
+        android:textColor="#055E93"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/botaoConsultar"
+        app:layout_constraintTop_toBottomOf="@+id/titBotaoEscrever"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/titBotaoImpCsv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Importar dados"
+        android:textColor="#055E93"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/botaoImpCsv"
+        app:layout_constraintTop_toBottomOf="@+id/titBotaoConsultar"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/rodapeVersao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="APTOI - Assistente de Procedimentos da Terapia Ocupacional na Intensiva - v1.0.0"
+        android:textColor="#646464"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/desenvolvidoPor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Desenvolvido por:"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/hGuedalia"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hGuedalia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="H. Guedalía"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/email"
+        app:layout_constraintStart_toEndOf="@id/desenvolvidoPor" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="hguedalia.dev@gmail.com"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/hGuedalia"
+        android:autoLink="email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

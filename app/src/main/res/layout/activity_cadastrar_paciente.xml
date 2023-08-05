@@ -50,7 +50,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/dados"
+            android:text="@string/topoDados"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -287,7 +287,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/sinaisVitais"
+            android:text="@string/topoSinaisVitais"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -420,7 +420,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/farmacos"
+            android:text="@string/topoFarmacos"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -480,7 +480,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/suporteVida"
+            android:text="@string/topoSuporteVida"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -684,7 +684,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/avaliacoes"
+            android:text="@string/topoAvaliacoes"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -864,7 +864,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/exames"
+            android:text="@string/topoExames"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -996,7 +996,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/postura"
+            android:text="@string/topoPostura"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -1128,7 +1128,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/estimuloAuditivo"
+            android:text="@string/topoEstimuloAuditivo"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -1332,7 +1332,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/estimuloOlfativo"
+            android:text="@string/topoEstimuloOlfativo"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -1488,7 +1488,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/estimuloVisual"
+            android:text="@string/topoEstimuloVisual"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -1692,7 +1692,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/estimuloTatil"
+            android:text="@string/topoEstimuloTatil"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -1968,7 +1968,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/estimuloProprioceptivo"
+            android:text="@string/topoEstimuloProprioceptivo"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -2244,7 +2244,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="@string/estimuloCognitivo"
+            android:text="@string/topoEstimuloCognitivo"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -2424,7 +2424,7 @@
             android:layout_marginTop="24dp"
             android:background="#007305"
             android:gravity="center"
-            android:text="MÉTODO TERAPÊUTICO"
+            android:text="@string/topoMetodoTerapeutico"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -2436,7 +2436,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="ROO"
+            android:text="@string/metRoo"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2460,7 +2460,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="BBT"
+            android:text="@string/metBbt"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2484,7 +2484,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="KBT"
+            android:text="@string/metKbt"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2508,7 +2508,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="EMC"
+            android:text="@string/metEmc"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2532,7 +2532,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="IS"
+            android:text="@string/metIs"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2556,7 +2556,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="FRK"
+            android:text="@string/metFrk"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2580,7 +2580,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="JCB"
+            android:text="@string/metJcb"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2604,7 +2604,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="AM"
+            android:text="@string/metAm"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2628,7 +2628,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="CC"
+            android:text="@string/metCc"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2652,7 +2652,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="CNA"
+            android:text="@string/metCna"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2676,7 +2676,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="DDOR"
+            android:text="@string/metDdor"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 

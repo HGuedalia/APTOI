@@ -8,6 +8,7 @@ import android.os.Environment;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,11 +45,23 @@ public class HomepageActivity extends AppCompatActivity {
             // Portanto, você pode usar a permissão de armazenamento antiga aqui, se necessário
         }
 
-        ImageView princEscrever = findViewById(R.id.princEscrever);
-        ImageView princConsultar = findViewById(R.id.princConsultar);
-        ImageView princImpCSV = findViewById(R.id.princImpCsv);
+        ImageView princEscrever = findViewById(R.id.botaoEscrever);
+        TextView titBotaoEscrever = findViewById(R.id.titBotaoEscrever);
+        ImageView princConsultar = findViewById(R.id.botaoConsultar);
+        TextView titBotaoConsultar = findViewById(R.id.titBotaoConsultar);
+        ImageView princImpCSV = findViewById(R.id.botaoImpCsv);
+        TextView titBotaoImpCsv = findViewById(R.id.titBotaoImpCsv);
+        TextView eMail = findViewById(R.id.email);
 
         princEscrever.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomepageActivity.this, CadastrarPacienteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        titBotaoEscrever.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomepageActivity.this, CadastrarPacienteActivity.class);
@@ -64,12 +77,45 @@ public class HomepageActivity extends AppCompatActivity {
             }
         });
 
+        titBotaoConsultar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomepageActivity.this, ListarFichasActivity.class);
+                startActivity(intent);
+            }
+        });
+
         princImpCSV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openFileChooser();
             }
         });
+
+        titBotaoImpCsv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFileChooser();
+            }
+        });
+
+        eMail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String emailAddress = eMail.getText().toString();
+                String subject = "Contato APTOI";
+                composeEmail(emailAddress, subject);
+            }
+        });
+    }
+
+    private void composeEmail(String emailAddress, String subject) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:" + Uri.encode(emailAddress) + "?subject=" + Uri.encode(subject)));
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
     private void openManageAllFilesSettings() {
