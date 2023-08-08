@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:text="APTOI - Assistente de Procedimentos da Terapia Ocupacional na Intensiva - v1.0.0"
+        android:text="@string/versao"
         android:textColor="#646464"
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,5 +127,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/hGuedalia"
         android:autoLink="email" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

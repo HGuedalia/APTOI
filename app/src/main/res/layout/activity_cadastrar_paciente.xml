@@ -1800,7 +1800,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="TR"
+            android:text="@string/taTr"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -1824,7 +1824,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="ER"
+            android:text="@string/taEr"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -1848,7 +1848,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="IEC"
+            android:text="@string/taIec"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 
@@ -2028,7 +2028,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="MPA"
+            android:text="@string/prMpa"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold" />
 

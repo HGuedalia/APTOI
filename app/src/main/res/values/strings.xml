@@ -24,8 +24,8 @@
     <string name="canNasal">Cânula nasal</string>
     <string name="mascaraVenturi">Máscara de Venturi</string>
     <string name="elmo">Elmo</string>
-    <string name="tot">Cânula orotraqueal</string>
-    <string name="tqt">Cânula de traqueostomia</string>
+    <string name="tot">Tubo orotraqueal</string>
+    <string name="tqt">Tubo de traqueostomia</string>
     <string name="topoAvaliacoes">AVALIAÇÕES</string>
     <string name="glg">Escala de Glasgow</string>
     <string name="rass">Escala de Richmond</string>
@@ -125,4 +125,5 @@
     <string name="topoDados">DADOS</string>
     <string name="topoSinaisVitais">SINAIS VITAIS</string>
     <string name="topoMetodoTerapeutico">MÉTODO TERAPÊUTICO</string>
+    <string name="versao">APTOI - Assistente de Procedimentos da Terapia Ocupacional na Intensiva - v0.0.10</string>
 </resources>
