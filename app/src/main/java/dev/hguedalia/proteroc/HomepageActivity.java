@@ -311,7 +311,7 @@ public class HomepageActivity extends AppCompatActivity {
         for (char c : line.toCharArray()) {
             if (c == '"') {
                 insideQuotes = !insideQuotes;
-            } else if (c == ',' && !insideQuotes) {
+            } else if (c == ';' && !insideQuotes) {
                 columns.add(currentColumn.toString());
                 currentColumn.setLength(0); // Limpa o StringBuilder para a próxima coluna
             } else {

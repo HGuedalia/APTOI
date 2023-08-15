@@ -384,7 +384,7 @@
             android:autofillHints=""
             android:ems="10"
             android:inputType="number|numberDecimal"
-            android:digits="0123456789,"
+            android:digits="0123456789,."
             android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textStyle="normal" />
