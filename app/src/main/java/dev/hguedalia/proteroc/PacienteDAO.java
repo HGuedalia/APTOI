@@ -287,7 +287,10 @@ public class PacienteDAO {
         values.put("fc", paciente.getFc());
         values.put("fr", paciente.getFr());
         values.put("spo2", paciente.getSpo2());
-        values.put("t", paciente.getT());
+        // INSERÇÃO
+        String tWithCommas = paciente.getT().replace('.', ',');
+        values.put("t", tWithCommas);
+        //values.put("t", paciente.getT());
         values.put("pa", paciente.getPa());
         values.put("dva", paciente.getDva());
         values.put("sedoanalgesia", paciente.getSedoanalgesia());

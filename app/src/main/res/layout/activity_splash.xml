@@ -12,8 +12,11 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/splashscreen" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splashscreen"
+        tools:layout_editor_absoluteY="51dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
