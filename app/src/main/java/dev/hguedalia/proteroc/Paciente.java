@@ -109,6 +109,9 @@ public class Paciente implements Serializable {
     private String cc;
     private String cna;
     private String ddor;
+    //
+    private String sinal;
+    //
 
     public Integer getId() {
         return id;
@@ -972,6 +975,17 @@ public class Paciente implements Serializable {
             nomeLista = nome;
         }
 
-        return leito + "   |   " + nomeLista + "   |   " + dataAtendimento;
+        //        String aptoMob = this.getAptoMob().trim();
+
+        if ("não".equalsIgnoreCase(this.getAptoMob().trim())) {
+            // Se o campo "aptoMob" for "não", defina a cor personalizada.
+            sinal = "   |   [ X ]";
+        } else {
+            // Caso contrário, use a cor padrão.
+            sinal = "";
+        }
+        //
+
+        return leito + "   |   " + nomeLista + "   |   " + dataAtendimento + sinal;
     }
 }
