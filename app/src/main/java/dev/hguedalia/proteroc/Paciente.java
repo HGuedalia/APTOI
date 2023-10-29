@@ -978,10 +978,10 @@ public class Paciente implements Serializable {
         //        String aptoMob = this.getAptoMob().trim();
 
         if ("não".equalsIgnoreCase(this.getAptoMob().trim())) {
-            // Se o campo "aptoMob" for "não", defina a cor personalizada.
+            // Se o campo "aptoMob" for "não", use marcador.
             sinal = "   |   [ X ]";
         } else {
-            // Caso contrário, use a cor padrão.
+            // Caso contrário, não use marcador.
             sinal = "";
         }
         //
