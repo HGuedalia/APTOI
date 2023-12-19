@@ -80,8 +80,8 @@
     <string name="taTemp">Tempo</string>
     <string name="taResp">Resposta</string>
     <string name="topoEstimuloProprioceptivo">ESTÍMULO PROPRIOCEPTIVO</string>
-    <string name="prMal">Mobilidade ativa livre</string>
-    <string name="prMaa">Mobilidade ativa assistida</string>
+    <string name="prMal">Mobilização ativa livre</string>
+    <string name="prMaa">Mobilização ativa assistida</string>
     <string name="prCc">Co-contração</string>
     <string name="prP">Posicionamento</string>
     <string name="prEstb">Estabilização</string>
@@ -107,7 +107,7 @@
     <string name="detalhes_paciente">Prontuário</string>
     <string name="taEr">Escovagem rápida</string>
     <string name="taTr">Toque rugoso</string>
-    <string name="prMpa">Mobilidade passiva</string>
+    <string name="prMpa">Mobilização passiva</string>
     <string name="metRoo">Método de Rood</string>
     <string name="metBbt">Método de Bobath</string>
     <string name="metKbt">Método de Kabat</string>
